@@ -1,5 +1,5 @@
 # How to Stream the Audio Out from GNU Radio into VLC Media Player
-(Tested on GNU Radio 3.7.10 and Ubuntu 16.04)
+*(Tested on GNU Radio 3.7.10 and Ubuntu 16.04)*
 
 ![](./gnuradio_logo.svg)
 
