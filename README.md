@@ -15,7 +15,7 @@ aUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaU
 ```
 I tried to solve this problem by streaming the audio into VLC media player through an UDP sink block. In my circumstances, the problem goes away and the VLC itself provides another very neat feature: Audio Equalizer
 
-## Reuirements
+## Requirements
 * GNU Radio [GitHub repo](https://github.com/gnuradio/gnuradio)
 * RTL SDR dongle
 * gr-osmosdr [GitHub repo](https://github.com/osmocom/gr-osmosdr)
