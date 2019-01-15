@@ -22,6 +22,13 @@ I tried to solve this problem by streaming the audio into VLC media player throu
 * rtl-sdr [GitHub repo](https://github.com/osmocom/rtl-sdr)
 * VLC media player
 
+## Downloading
+Open the terminal and type:
+```
+git clone https://github.com/handiko/RTL-FM-VLC.git
+```
+This repo then will be downloaded into your **/home/RTL-FM-VLC** folder. 
+
 ## The Flowgraph
 The flowgraph is included in **RTL-FM-VLC/gnuradio-flowgraph** folder. There is not much to the flowgraph itself, nothing fancy. The special bits is that now you have three additional blocks which you have to add to your "ordinary fm receiver" flowgraph, which are float-to-short, endian-swap, and UDP sink.
 
@@ -38,6 +45,9 @@ vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7355
 
 Now the flowgraph should stream the audio into the VLC media player. You can confirm this by controlling the audio volume from the VLC.
 ![](./rtl_fm_vlc.png)
+
+## Audio Reception Sample
+I added an audio wav file (titled: fm.wav) which included in **RTL-FM-VLC/sample folder**. Just double click it and you have the idea about the reception quality that I've got.
 
 ## Tips
 * If the audio sounds a little bit rough, try to increase of decrease the volume through the GNU Radio application.
