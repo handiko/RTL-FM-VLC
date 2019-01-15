@@ -1,7 +1,7 @@
 # How to Stream the Audio Out from GNU Radio into VLC Media Player
 (Tested on GNU Radio 3.7.10 and Ubuntu 16.04)
 
-![](./gnuradio_logo.png)
+![](./gnuradio_logo.svg)
 
 The background behind this is that when you are using RTL SDR and onboard soundcard simultaneously as the I/O in GNU Radio, sometimes their hardware clock is not synchronized one on another, therefore after some amount of time, their clock drift is become significant enough to cause the famous problem which is **audio-underrun** or **audio-overrun**. This symptoms causing very annonying **audio break** (choppy audio) and indicated in the GNU Radio output console:
 
