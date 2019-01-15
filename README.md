@@ -32,7 +32,7 @@ After you are sure that the FM receiver works properly, now disable the Audio Si
 ![](./rtl_fm_udp.grc2.png)
 
 Run the GNU Radio flowgraph, open the terminal, and type:
-`vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7355`
+```vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7355```
 
 Now the flowgraph should stream the audio into the VLC media player. You can confirm this by controlling the audio volume from the VLC.
 ![](./rtl_fm_vlc.png)
