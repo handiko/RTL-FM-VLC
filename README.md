@@ -27,7 +27,7 @@ Start off by disabling float-to-short, endian-swap, and UDP sink block and enabl
 ![](./rtl_fm_udp.grc1.png)
 
 After you are sure that the FM receiver works properly, now disable the Audio Sink block and enable the float-to-short, endian-swap, and UDP sink.
-![](./rtl_fm_udp.grc1.png)
+![](./rtl_fm_udp.grc2.png)
 
 Run the GNU Radio flowgraph, open the terminal, and type:
 `vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7355`
