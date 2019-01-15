@@ -1,6 +1,8 @@
 # How to Stream the Audio Out from GNU Radio into VLC Media Player
 (Tested on GNU Radio 3.7.10 and Ubuntu 16.04)
 
+![](./gnuradio_logo.png)
+
 The background behind this is that when you are using RTL SDR and onboard soundcard simultaneously as the I/O in GNU Radio, sometimes their hardware clock is not synchronized one on another, therefore after some amount of time, their clock drift is become significant enough to cause the famous problem which is **audio-underrun** or **audio-overrun**. This symptoms causing very annonying **audio break** (choppy audio) and indicated in the GNU Radio output console:
 
 ```
@@ -40,3 +42,13 @@ Now the flowgraph should stream the audio into the VLC media player. You can con
 * You can add another UDP instance by adding another UPD Sink and allocate another port number.
 * Use the VLC built-in equalizer to shape the audio quality to your favor.
 
+## Acknwoledgement
+* [Alexandru Csete OZ9AEC](http://gqrx.dk/doc/streaming-audio-over-udp)
+
+## Contributing
+1. Fork it [https://github.com/handiko/RTL-FM-VLC/fork](https://github.com/handiko/RTL-FM-VLC/fork)
+2. Create new branch (`git checkout -b myfeature`)
+3. Do some editing / create new feature
+4. Commit your works (`git commit -m "Adding some myfeature blah blah blah.."`)
+5. Push to the branch (`git push -u origin myfeature`)
+6. Create a new Pull Request
