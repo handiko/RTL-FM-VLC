@@ -50,8 +50,8 @@ Now the flowgraph should stream the audio into the VLC media player. You can con
 I added an audio wav file (titled: fm.wav) which included in **RTL-FM-VLC/sample folder**. Just double click it and you have the idea about the reception quality that I've got.
 
 ## Tips
-* If the audio sounds a little bit rough, try to increase of decrease the volume through the GNU Radio application.
-* You can add another UDP instance by adding another UPD Sink and allocate another port number.
+* If the audio sounds a little bit rough, try to increase or decrease the volume in the GNU Radio application.
+* You can add another UDP instance by adding another UPD Sink and allocate another port.
 * Use the VLC built-in equalizer to shape the audio quality to your favor.
 
 ## Acknwoledgement
