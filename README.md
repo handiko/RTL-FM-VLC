@@ -13,7 +13,7 @@ Found Rafael Micro R820T tuner
 gr::log :INFO: audio source - Audio sink arch: alsa
 aUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaU
 ```
-I tried to solve this problem by streaming the audio into VLC media player through an UDP sink block. In my circumstances, the problem goes away and the VLC itself provides another very neat feature: Audio Equalizer
+I tried to solve this problem by streaming the audio into VLC media player through an UDP sink block. Certainly, the problem goes away and the VLC itself provides another very neat feature: Audio Equalizer
 
 ## Requirements
 * GNU Radio [GitHub repo](https://github.com/gnuradio/gnuradio)
