@@ -474,7 +474,7 @@
     </param>
     <param>
       <key>scale</key>
-      <value>500</value>
+      <value>16000</value>
     </param>
     <param>
       <key>vlen</key>
@@ -588,7 +588,7 @@
     </param>
     <param>
       <key>taps</key>
-      <value>firdes.low_pass(0.1*(pow(10.0,volume/10.0)),48e3,10e3,5e3,firdes.WIN_BLACKMAN)</value>
+      <value>firdes.low_pass(1e-3 *(pow(10.0,volume/10.0)),48e3,10e3,5e3,firdes.WIN_BLACKMAN)</value>
     </param>
     <param>
       <key>type</key>

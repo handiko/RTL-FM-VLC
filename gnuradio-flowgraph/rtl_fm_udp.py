@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: RTL FM UDP - Handiko Gesang
-# Generated: Wed Jan 16 07:41:44 2019
+# Generated: Tue Jan 22 03:39:18 2019
 ##################################################
 
 if __name__ == '__main__':
@@ -140,10 +140,10 @@ class rtl_fm_udp(gr.top_block, Qt.QWidget):
         self.osmosdr_source_0.set_antenna('', 0)
         self.osmosdr_source_0.set_bandwidth(0, 0)
           
-        self.fft_filter_xxx_0 = filter.fft_filter_fff(1, (firdes.low_pass(0.1*(pow(10.0,volume/10.0)),48e3,10e3,5e3,firdes.WIN_BLACKMAN)), 1)
+        self.fft_filter_xxx_0 = filter.fft_filter_fff(1, (firdes.low_pass(1e-3 *(pow(10.0,volume/10.0)),48e3,10e3,5e3,firdes.WIN_BLACKMAN)), 1)
         self.fft_filter_xxx_0.declare_sample_delay(0)
         self.blocks_udp_sink_0 = blocks.udp_sink(gr.sizeof_short*1, 'localhost', 7355, 1472, True)
-        self.blocks_float_to_short_0 = blocks.float_to_short(1, 500)
+        self.blocks_float_to_short_0 = blocks.float_to_short(1, 16000)
         self.blocks_endian_swap_0 = blocks.endian_swap(2)
         self.analog_wfm_rcv_0 = analog.wfm_rcv(
         	quad_rate=192e3,
@@ -171,7 +171,7 @@ class rtl_fm_udp(gr.top_block, Qt.QWidget):
 
     def set_volume(self, volume):
         self.volume = volume
-        self.fft_filter_xxx_0.set_taps((firdes.low_pass(0.1*(pow(10.0,self.volume/10.0)),48e3,10e3,5e3,firdes.WIN_BLACKMAN)))
+        self.fft_filter_xxx_0.set_taps((firdes.low_pass(1e-3 *(pow(10.0,self.volume/10.0)),48e3,10e3,5e3,firdes.WIN_BLACKMAN)))
 
     def get_samp_rate(self):
         return self.samp_rate
